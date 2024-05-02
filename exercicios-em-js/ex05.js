@@ -1,21 +1,14 @@
 /*
-5) Cálculo de Fatorial:
-  Escreva uma função que calcule o fatorial de um número.
+5) Conversão de Celsius para Fahrenheit:
+  Escreva uma função que converta uma temperatura de Celsius para Fahrenheit.
 */
 
 // CODIGO
 
-function calculeFatorial(num) {
-  if(num === 0 || num === 1) {
-    return 1
-  } else {
-    return num * calculeFatorial(num - 1)
-  }
+function converterTemperatura(celsius) {
+  const fahrenheit = (celsius * 1.8) + 32
+  return `${celsius} graus Celsius é equivalente a ${fahrenheit} graus Fahrenheit.`
 }
 
-console.log(calculeFatorial(5))
+console.log(converterTemperatura(28))
 
-// ANOTAÇÕES
-/* 
-  Apesar de não ser um loop na forma tradicional, este código utiliza recursão para calcular o fatorial do número fornecido. Recursão é um conceito onde uma função chama a si mesma em seu próprio corpo. 
-*/
